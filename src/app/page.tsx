@@ -8,6 +8,16 @@ let jsonLd =
   "url": "https://thaikoder.dev/"
 }
 
+export async function generateMetadata() {
+  return {
+    title: "ThaiKoder",
+    description: "Blog de ThaiKoder",
+    alternates:{
+      canonical: "https://thaikoder.dev/"
+    }
+  };
+}
+
 export default function Home() {
   return (
     <div className="flex flex-col min-h-screen bg-sky-500 text-white">
